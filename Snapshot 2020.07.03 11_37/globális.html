@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="src\css\main.css">
+		<link rel="stylesheet" type="text/css" href="src\css\w3.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<style>@media only screen and (max-width: 600px) {#fejlec {padding-right:0px;}}</style>
+		<title>Globális statisztika</title>
+	</head>
+	<hr class="w3-border-grey" style="margin:auto;width:40%">
+
+ <!--Háttér színe-->
+	<body class="w3-light-grey">
+ <!--Háttér színe vége-->
+
+ <!-- Oldalmenü -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-card" style="z-index:11; width:300px;" id="mySidebar">
+		<div class="w3-container" id="udvozlunk">Menü</div>
+		<div class="w3-bar-block">
+			<a href="index.html" id="menuitem"><i class="fa fa-home fa-fw"></i>Főoldal</a>
+			<a href="terkepek.html" id="menuitem"><i class="fa fa-globe fa-fw"></i>Térképek</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-info-circle fa-fw"></i>Tudnivalók<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="vedekezes.html" id="link"><i class="fas fa-shield-alt fa-fw"></i>Védekezés ellene</a>
+				<a href="osszehasonlitas.html" id="link"><i class="fas fa-exchange-alt fa-fw"></i>Összehasonlítás</a>
+				<a href="globális.html" id="link"><i class="fa fa-globe fa-fw"></i>Országok adatai</a>
+				<a href="karanten.html" id="link"><i class="fa fa-hospital-o fa-fw"></i>Karantén hazánkban</a>
+				<a href="iskola.html" id="link"><i class="fas fa-graduation-cap fa-fw"></i>Iskolabezárás</a>
+			</div>
+			<a href="gazdasagi.html" id="menuitem"><i class="fas fa-link fa-fw"></i>Kapcsolódó</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-id-card fa-fw"></i>Elérhetőségek<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="https://www.facebook.com/koronavirushun/" target="_blank" id="link"><i class="fab fa-facebook-f fa-fw"></i>Facebook oldal</a>
+				<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" id="link"><i class="fas fa-users fa-fw"></i>Facebook csoport</a>
+				<a href="mailto:support@koronavirus-info.hu" id="link"><i class="fas fa-envelope fa-fw"></i>E-mail</a>
+				<a href="https://www.patreon.com/bolyaidevelopers" id="link"><i class="fab fa-patreon fa-fw"></i>Patreon</a>
+				<a href="impresszum.html" id="link"><i class="fa fa-italic fa-fw"></i>Impresszum</a>
+			</div>
+		</div>
+	</nav>
+ <!-- Oldalmenü vége! -->
+
+ <!-- Oldalmenü eltűnése effekt -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer; z-index: 10;" title="close side menu" id="myOverlay"></div>
+ <!-- Oldalmenü eltűnése effekt vége! -->
+
+ <!-- OLDAL TARTALMA -->
+<div class="w3-main" style="margin-left:300px;">
+ 
+ <!-- Fejléc -->
+	<header class="w3-bar w3-top w3-large" id="fejlec">
+		<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
+		<div id="spanfejlec"><b>Koronavírus Magyarország</b></div>
+	</header>
+ <!-- Fejléc vége! -->
+ 
+	<header class="w3-container" style="padding-top:100px; padding-left: 50px; padding-right: 50px;">
+	<header class="w3-container w3-center">
+		<h2><b>Globális statisztika</b></h2>
+		</header>
+		<hr class="w3-border-grey" style="margin:auto;width:40%">
+		
+		<p id "tartalom" style="text-align:center">Itt tájékozódhatnak a 15 legtöbb fertőzöttel rendelkező országok adataival</p>
+		<p id "tartalom" style="text-align:center">Legutólsó frissítés: 16:10</p>
+	<table id="customers" align="center">
+  <tr style="background-color:#800000; height:30px; color:white;">
+    <th>Ország</th>
+    <th>Fertőzöttek száma</th>
+  </tr>
+  <tr id="tabla">
+    <th>Kína</th>
+    <th>80,880</th>
+  </tr>
+  <tr id="kuki">
+    <th>Olaszország</th>
+    <th>27,980</th>
+  </tr>
+    <tr id="tabla">
+    <th>Irán</th>
+    <th>14,991</th>
+	</tr>
+	  <tr id="kuki">
+    <th>Spanyolország</th>
+    <th>9,428</th>
+  </tr>
+    <tr id="tabla">
+    <th>Dél-Korea</th>
+    <th>8,236</th>
+  </tr>
+    <tr id="kuki">
+    <th>Németország</th>
+    <th>7,241</th>
+  </tr>
+    <tr id="tabla">
+    <th>Franciaország</th>
+    <th>6,633</th>
+  </tr>
+    <tr id="kuki">
+    <th>Egyesült-Államok</th>
+    <th>4,314</th>
+  </tr>
+    <tr id="tabla">
+    <th>Svájc</th>
+    <th>2,353</th>
+  </tr>
+    <tr id="kuki">
+    <th>Egyesült Királyság</th>
+    <th>1,543</th>
+  </tr>
+    <tr id="tabla">
+    <th>Hollandia</th>
+    <th>1,413</th>
+  </tr>
+    <tr id="kuki">
+    <th>Norvégia</th>
+    <th>1,332</th>
+  </tr>
+    <tr id="tabla">
+    <th>Svédország</th>
+    <th>1,119</th>
+  </tr>
+    <tr id="kuki">
+    <th>Belgium</th></th>
+    <th>1,058</th>
+  </tr>
+    <tr id="tabla">
+    <th>Ausztria</th>
+    <th>1,018</th>
+  </tr>
+</table>
+	</header>
+
+  <!-- Lábléc -->
+	<footer class="w3-container w3-red w3-center w3-margin-top w3-card" id="lablec">
+		<p><b>Az oldal nem minősül hivatalos információforrásnak! Az oldalon megjelent cikkek és írások személyes véleményként értelmezendőek!</b></p>
+		<p><b>Elérhetőségeink</b></p>
+		<a href="https://www.facebook.com/koronavirushun/" target="_blank" title="Facebook oldal"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fab fa-facebook-f" id="icons"></i></a>
+		<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" title="Facebook csoport"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fas fa-users"  id="icons"></i></a>
+		<a href="mailto:bolyaiteam@gmail.com" title="Email"><i style="margin-right: 0.5em; color: #EEEEEE;" class="fas far fa-envelope" id="icons"></i></a>
+		<i class="fab fa-linkedin-in" id="icons" title="LinkedIn"></i><p></p>
+	</footer>
+</div>
+	<script src="src\js\sidebar.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

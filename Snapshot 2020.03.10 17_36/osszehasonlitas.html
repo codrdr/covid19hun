@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="src\css\main.css">
+		<link rel="stylesheet" type="text/css" href="src\css\w3.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<title>Összehasonlítás a többi vírussal</title>
+	</head>
+
+ <!--Háttér színe-->
+	<body class="w3-light-grey">
+ <!--Háttér színe vége-->
+ 
+ <!-- Fejléc -->
+	<header class="w3-bar w3-top w3-large" id="fejlec">
+		<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
+		<div id="spanfejlec">Koronavírus Magyarország</div>
+	</header>
+ <!-- Fejléc vége! -->
+
+ <!-- Oldalmenü -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-card" style="z-index:3; width:300px; margin-top: 14px" id="mySidebar">
+		<div class="w3-container" id="udvozlunk">Menü</div>
+		<div class="w3-bar-block">
+			<a href="index.html" id="menuitem"><i class="fa fa-home fa-fw"></i>Főoldal</a>
+			<a href="terkepek.html" id="menuitem"><i class="fa fa-globe fa-fw"></i>Térképek</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-info-circle fa-fw"></i>Tudnivalók<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="vedekezes.html" id="link"><i class="fas fa-shield-alt fa-fw"></i>Védekezés ellene</a>
+				<a href="osszehasonlitas.html" id="link"><i class="fas fa-exchange-alt fa-fw"></i>Összehasonlítás</a>
+				<a href="gazdasagi.html" id="link"><i class="fas fa-industry fa-fw"></i>Gazdasági hatások</a>
+			</div>
+			<a href="kapcsolodo.html" id="menuitem"><i class="fas fa-link fa-fw"></i>Kapcsolódó</a> <!--gazdasági???-->
+			<a href="elerhetoseg.html" id="menuitem"><i class="fa fa-id-card fa-fw"></i>Elérhetőségek</a>
+		</div>
+	</nav>
+ <!-- Oldalmenü vége! -->
+
+ <!-- Oldalmenü eltűnése effekt -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+ <!-- Oldalmenü eltűnése effekt vége! -->
+
+ <!-- OLDAL TARTALMA -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+	<header class="w3-container" style="padding-top:22px; padding-left: 50px; padding-right: 50px;">
+	<header class="w3-container">
+		<h2><b>Összehasonlítás a többi vírussal</b></h2>
+	</header>
+		
+		<p id="tartalom">
+		A koronavírusnak több fajtája is van. A legelső ilyen vírust a hatvanas években fedezték fel. 
+		Vannak amik csak állatokra hatnak, vannak azonban amikor emeberekre úgy, hogy az nem jelent 
+		számukra semmiféle problémát. Az első ilyen vírus ami az emberre veszélyes volt a SARS, ami 
+		szintén Kínából indult. A SARS szerencsére nem tudott annyira elterjedni a mostani koronavírussal 
+		ellentétben, így az nem okozott komolyabb problémát az emberiség kapcsán, viszont a halálozási 
+		aránya elég magas volt. 2019-ben bukkant fel a legújabb koronavírus típus ami a COVID-19 elnevezést 
+		kapta, és szintén az emberre veszélyes. Egy wuhani piacról indult, azt még nem tudják pontosan melyik 
+		állatból mutálódhatott. Ez a vírus az idősekre valamint a súlyosabb betegekre veszélyes, akiknek legyengült az immunrendszere.</p>
+		
+		<img src="src\img\koronavirus.jpg" style="width:700px; border-radius:15px">
+
+		<p><i>Egy animációs kép a koronavírusról, valamint a szerkezeti felépítéséről</i></p>
+
+		<p>A koronavírus azért lehet eltérő olyan vírusoktól, mint például az influenza mivel jelenleg nincs rá ellenszer. A terjedése pedig rendkívül gyors.</p>
+
+		<header class="w3-container">
+		<h2><b>Statisztika más vírusokkal szemben</b></h2>
+		</header>
+
+			<table>
+				<tr style="background-color: #9D0000; color:white">
+					<th><b>Vírusok</b></th>
+					<th><b>Fertőzöttek</b></th>
+					<th><b>Elhunytak</b></th>
+					<th><b>Halálozási arány</b></th>
+				</tr>
+				<tr style="background-color:#ffb3b3">
+					<td>SARS</td>
+					<td>8273</td>
+					<td>775</td>
+					<td>9,6%</td>
+				</tr>
+				<tr style="background-color:#ffb3b3">
+					<td>MERS</td>
+					<td>2500+</td>
+					<td>850+</td>
+					<td>34%</td>
+				</tr>
+				<tr style="background-color:#ffb3b3">
+					<td>Influenza(egy évben)</td>
+					<td>Több mint 10 millió</td>
+					<td>250-650 ezer</td>
+					<td>1%</td>
+				</tr>
+				<tr style="background-color:#ffb3b3">
+					<td>Koronavírus</td>
+					<td>110.000</td>
+					<td>4000</td>
+					<td>3%</td>
+				</tr>
+			</table>
+	</header>
+
+  <!-- Lábléc -->
+	<footer class="w3-container w3-red w3-center w3-margin-top w3-card">
+		<p><b>Elérhetőségeink</b></p>
+		<a href="https://www.facebook.com/koronavirushun/" target="_blank" title="Facebook oldal"  > <i style="margin-right: 0.5em; color: #EEEEEE;" class="fab fa-facebook-f"  id="icons"></i></a>
+		<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" title="Facebook csoport"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fas fa-users"  id="icons"></i></a>
+		<a href="mailto:support@koronavirus-info.hu" title="Email"><i style="margin-right: 0.5em; color: #EEEEEE;" class="fas far fa-envelope" id="icons"></i></a>
+		<i class="fab fa-linkedin-in" id="icons" title="LinkedIn"></i>
+		<p><a href="https://www.facebook.com/koronavirushun" target="_blank" title="Facebook oldal">Kövessen minket a facebookon is!</a></p>
+	</footer>
+</div>
+	<script src="src\js\sidebar.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

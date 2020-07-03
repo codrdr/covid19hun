@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="src\css\main.css">
+		<link rel="stylesheet" href="src\css\w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<title>Koronavírus</title>
+	</head>
+	
+<body class="w3-light-grey">
+
+ <!-- Fejléc -->
+	<div class="w3-bar w3-top w3-large" id="fejlec">
+		<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>Menü</button>
+		<span class="w3-bar-item w3-left">Koronavírus</span>
+	</div>
+ <!-- Fejléc vége! -->
+
+ <!-- Oldalmenü -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-card" style="z-index:3; width:300px;" id="mySidebar"> <br>
+		<div class="w3-container">
+			<h5>Üdvözlünk</h5> <hr>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i> Menü bezárása</a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Főoldal</a>
+			<a href="tudnivalok.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Tudnivalók a vírusról</a>
+			<a href="vedekezes.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Védekezés és megelőzés</a>
+			<a href="virusok.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Összehasonlítás a többi vírussal</a>
+			<a href="attila.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Fogyj Attilával!</a>
+			<a href="gazdasagi.html" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-home fa-fw"></i>Gazdasági következmények</a>
+			<a href="https://www.facebook.com/koronavirushun" target="_blank" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-comments-o fa-fw"></i>Facebook oldal</a>
+			<a href="https://www.facebook.com/groups/1007747686266719" target="_blank" class="w3-bar-item w3-button w3-padding w3-red w3-card"><i class="fa fa-users fa-fw"></i>Facebook csoport</a>
+		</div>
+	</nav>
+ <!-- Oldalmenü vége! -->
+
+ <!-- Oldalmenü eltűnése effekt -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+ <!-- Oldalmenü eltűnése effekt vége! -->
+
+ <!-- OLDAL TARTALMA -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+	
+	<!-- Header 1 -->
+		<header class="w3-container" style="padding-top: 10px">
+			<h3><b>Statisztikák</b></h3>
+		</header>
+		
+	<!-- Header 2 -->
+		<header class="w3-container">
+			<h5><b><i class="fa fa-dashboard"></i> Hazai statisztika</b></h5>
+		</header>
+
+	<!-- Doboz tároló -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+	<!-- Doboz 1 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>01</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Fertőzöttek</h4>
+	  </div>
+	</div>
+
+	<!-- Doboz 2 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>01</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Gyógyultak</h4>
+	  </div>
+	</div>
+	
+	<!-- Doboz 3 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-padding-16 w3-card" style="border-radius: 8px; color: white; background-color: #9D0000">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>2</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Elhunytak</h4>
+	  </div>
+	</div>
+   </div>
+	<!-- Doboz tároló vége! -->
+
+	<!-- Header 3 -->
+		<header class="w3-container">
+			<h5><b><i class="fa fa-dashboard"></i> Globális statisztika</b></h5>
+		</header>
+
+	<!-- Doboz tároló -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+	<!-- Doboz 4 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>01</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Fertőzöttek</h4>
+	  </div>
+	</div>
+
+	<!-- Doboz 5 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>01</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Gyógyultak</h4>
+	  </div>
+	</div>
+	
+	<!-- Doboz 6 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-padding-16 w3-card" style="border-radius: 8px; color: white; background-color: #9D0000">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3>2</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Elhunytak</h4>
+	  </div>
+	</div>
+   </div>
+	<!-- Doboz tároló vége! -->
+	
+	<!-- Vírustérkép -->
+	<header class="w3-container" style="padding-bottom: 10px">
+		<h3><b>Vírustérkép</b></h3>
+	</header>
+	
+	<div class="w3-row-padding w3-container">
+		<div class="w3-display-container">
+			<img src="src\images\virusterkep.jpg" width="74.7%" alt="Hiányzó információ">
+		<div class="w3-display-topleft w3-container" style="color: red"><b>A térkép vörös színnel jelzi a fertőzöttek helyi eloszlását.</b></div>
+		</div>
+	</div>
+	<!-- Vírustérkép vége! -->
+
+	<!-- Hírek -->
+	<header class="w3-container" style="padding-top:1%; padding-bottom:1%">
+		<h3><b>Tudnivalók</b></h3>
+	</header>
+
+	  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src\images\korona.jpg" alt="Első kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-red w3-card" style="color:white">
+        <p><b>Tudnivalók a vírusról</b></p>
+        <p>Alapvető információk arról, honnan indult el, most hol tart és mikor halunk meg. infóinfóinfóinfóinfóinfó</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="src\images\korona.jpg" alt="Második kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-card" style="background-color: #9D0000; color:white">
+        <p><b>Védekezés és megelőzés</b></p>
+        <p>Alapvető információk arról, hogyan előzhetjük meg a járványt és azt, hogy mi is elkapjuk és belepusztuljunk.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container"> 
+      <img src="src\images\korona.jpg" alt="Harmadik kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-red w3-card" style="color:white">
+        <p><b>Tünetei</b></p>
+        <p>Alapvető információk arról, hogy mik a tünetek, hogyan terjed és hogy kapd el. infóinfóinfóinfóinfóinfó</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom" >
+      <img src="src\images\korona.jpg" alt="Negyedik kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-red w3-card" style="color:white">
+        <p><b>Összehasonlítás a többi vírussal</b></p>
+        <p>Összehasonlítás a többi vírussal, radiontológiai vizsgálatok, egyéb kutatások. infóinfóinfóinfóinfóinfó</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="src\images\korona.jpg" alt="Ötödik kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-card" style="background-color: #9D0000; color:white">
+        <p><b>Fogyj Attilával!</b></p>
+        <p>Megtudhatod, hogyan fogyott le Attila 56 kilót 2 nap alatt! Kattints ide és nyerj! BIG WIN!!!444négy444</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="src\images\korona.jpg" alt="Hatodik kép" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-red w3-card" style="color:white">
+        <p><b>Gazdasági következmények</b></p>
+        <p>Megtudhatod hogyan hatott ki a világtőzsdére a vírus és mik lesznek a várható következmények. infóinfóinfóinfóinfóinfó</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lábléc -->
+	<footer class="w3-container w3-padding-16 w3-light-grey">
+		<p>Powered by: <a href="https://www.facebook.com/groups/1007747686266719" target="_blank">Koronavírus Magyarország</a></p>
+	</footer>
+</div>
+	<script src="src\js\sidebar.js"></script> 
+</body>
+</html>

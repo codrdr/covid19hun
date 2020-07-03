@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="src\css\main.css">
+		<link rel="stylesheet" type="text/css" href="src\css\w3.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<style>@media only screen and (max-width: 600px) {#fejlec {padding-right:0px;}}</style>
+		<title>Koronavírus Magyarország</title>
+	</head>
+
+ <!--Háttér színe-->
+	<body class="w3-light-grey">
+ <!--Háttér színe vége-->
+ 
+ <!-- Oldalmenü -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-card" style="z-index:11; width:300px;" id="mySidebar">
+		<div class="w3-container" id="udvozlunk">Menü</div>
+		<div class="w3-bar-block">
+			<a href="index.html" id="menuitem"><i class="fa fa-home fa-fw"></i>Főoldal</a>
+			<a href="terkepek.html" id="menuitem"><i class="fa fa-globe fa-fw"></i>Térképek</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-info-circle fa-fw"></i>Tudnivalók<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="vedekezes.html" id="link"><i class="fas fa-shield-alt fa-fw"></i>Védekezés ellene</a>
+				<a href="osszehasonlitas.html" id="link"><i class="fas fa-exchange-alt fa-fw"></i>Összehasonlítás</a>
+			</div>
+			<a href="gazdasagi.html" id="menuitem"><i class="fas fa-link fa-fw"></i>Kapcsolódó</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-id-card fa-fw"></i>Elérhetőségek<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="https://www.facebook.com/koronavirushun/" target="_blank" id="link"><i class="fab fa-facebook-f fa-fw"></i>Facebook oldal</a>
+				<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" id="link"><i class="fas fa-users fa-fw"></i>Facebook csoport</a>
+				<a href="mailto:support@koronavirus-info.hu" id="link"><i class="fas fa-envelope fa-fw"></i>E-mail</a>
+			</div>
+		</div>
+	</nav>
+ <!-- Oldalmenü vége! -->
+
+ <!-- Oldalmenü eltűnése effekt -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer; z-index: 10;" title="Menü bezárása" id="myOverlay"></div>
+ <!-- Oldalmenü eltűnése effekt vége! -->
+
+ <!-- OLDAL TARTALMA -->
+<div class="w3-main" style="margin-left:300px;">
+	
+ <!-- Fejléc -->
+	<header class="w3-bar w3-top w3-large" id="fejlec">
+		<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
+		<div id="spanfejlec"><b>Koronavírus Magyarország</b></div>
+	</header>
+ <!-- Fejléc vége! -->
+ 
+	<!-- Header 1 -->
+		<header class="w3-container" style="padding-top: 100px;">
+			<h3><b>Statisztikák</b></h3>
+		</header>
+	<!-- Header 2 -->
+		<header class="w3-container">
+			<h5><b><i class="fa fa-bar-chart fa-fw"></i>Hazai statisztika</b></h5>
+		</header>
+		
+	<!-- Doboz tároló -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+	<!-- Doboz 1 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">12</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Fertőzött</h4>
+	  </div>
+	</div>
+
+	<!-- Doboz 2 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">0</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Gyógyult</h4>
+	  </div>
+	</div>
+
+	<!-- Doboz 3 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-padding-16 w3-card" style="border-radius: 8px; color: white; background-color: #9D0000">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">0</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Elhunyt</h4>
+	  </div>
+	</div>
+   </div>
+	<!-- Doboz tároló vége! -->
+
+	<!-- Header 3 -->
+		<header class="w3-container">
+			<h5><b><i class="fa fa-bar-chart fa-fw"></i>Globális statisztika</b></h5>
+		</header>
+
+	<!-- Doboz tároló -->
+	<div class="w3-row-padding w3-margin-bottom">
+
+	<!-- Doboz 4 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">117 734</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Fertőzött</h4>
+	  </div>
+	</div>
+
+	<!-- Doboz 5 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-red w3-padding-16 w3-card" style="border-radius: 8px">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">64 391</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Gyógyult</h4>
+	  </div>
+	</div>
+	
+	<!-- Doboz 6 -->
+	<div class="w3-quarter" id="doboz">
+	  <div class="w3-container w3-padding-16 w3-card" style="border-radius: 8px; color: white; background-color: #9D0000">
+		<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+		  <div class="w3-right"> <h3 id="szamok">4 259</h3> </div>
+			<div class="w3-clear"></div>
+			<h4>Elhunyt</h4>
+	  </div>
+	</div>
+   </div>
+	<!-- Doboz tároló vége! -->
+
+	<!-- Hírfolyam -->
+	<header class="w3-container" style="margin-bottom: 1%">
+		<h3><b>Aktuális hírek</b></h3>
+	</header>
+	
+	<div class="w3-container">
+		<rssapp-list id="7hht6MzmXZxvstU9"></rssapp-list>
+		<rssapp-list id="ORoMK2FFWR71staN"></rssapp-list>
+		<rssapp-list id="LI7AP8jbJEecfrgO"></rssapp-list>
+	</div>
+	<!-- Hírfolyam vége! -->
+
+  <!-- Lábléc -->
+	<footer class="w3-container w3-red w3-center w3-margin-top w3-card" id="lablec">
+		<p><b>Elérhetőségeink</b></p>
+		<a href="https://www.facebook.com/koronavirushun/" target="_blank" title="Facebook oldal"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fab fa-facebook-f" id="icons"></i></a>
+		<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" title="Facebook csoport"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fas fa-users"  id="icons"></i></a>
+		<a href="mailto:support@koronavirus-info.hu" title="Email"><i style="margin-right: 0.5em; color: #EEEEEE;" class="fas far fa-envelope" id="icons"></i></a>
+		<i class="fab fa-linkedin-in" id="icons" title="LinkedIn"></i>
+		<p><a href="https://www.facebook.com/koronavirushun" target="_blank" title="Facebook oldal">Kövessen minket a facebookon is!</a></p>
+	</footer>
+</div>
+	<script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>
+	<script src="src\js\sidebar.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*zoom effect delay*/
+#doboz {
+  transition: transform .2s;
+}
+
+/*zoom effect*/
+#doboz:hover {
+  -ms-transform: scale(1.05);     /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+#fejlec {
+  z-index:1; /*front of everything*/
+  background-color:#9D0000;
+  color: white;
+}
+
+#tartalom {
+  text-align: justify;
+}

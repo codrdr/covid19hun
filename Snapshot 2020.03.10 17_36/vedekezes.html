@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="src\css\main.css">
+		<link rel="stylesheet" type="text/css" href="src\css\w3.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<title>Védekezés és megelőzés</title>
+	</head>
+
+ <!--Háttér színe-->
+	<body class="w3-light-grey">
+ <!--Háttér színe vége-->
+ 
+ <!-- Fejléc -->
+	<header class="w3-bar w3-top w3-large" id="fejlec">
+		<button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i></button>
+		<div id="spanfejlec">Koronavírus Magyarország</div>
+	</header>
+ <!-- Fejléc vége! -->
+
+ <!-- Oldalmenü -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-card" style="z-index:3; width:300px; margin-top: 14px" id="mySidebar">
+		<div class="w3-container" id="udvozlunk">Menü</div>
+		<div class="w3-bar-block">
+			<a href="index.html" id="menuitem"><i class="fa fa-home fa-fw"></i>Főoldal</a>
+			<a href="terkepek.html" id="menuitem"><i class="fa fa-globe fa-fw"></i>Térképek</a>
+			<button class="dropdown-btn" id="menuitem">
+				<i class="fas fa-info-circle fa-fw"></i>Tudnivalók<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="vedekezes.html" id="link"><i class="fas fa-shield-alt fa-fw"></i>Védekezés ellene</a>
+				<a href="osszehasonlitas.html" id="link"><i class="fas fa-exchange-alt fa-fw"></i>Összehasonlítás</a>
+				<a href="gazdasagi.html" id="link"><i class="fas fa-industry fa-fw"></i>Gazdasági hatások</a>
+			</div>
+			<a href="kapcsolodo.html" id="menuitem"><i class="fas fa-link fa-fw"></i>Kapcsolódó</a> <!--gazdasági???-->
+			<a href="elerhetoseg.html" id="menuitem"><i class="fa fa-id-card fa-fw"></i>Elérhetőségek</a>
+		</div>
+	</nav>
+ <!-- Oldalmenü vége! -->
+
+ <!-- Oldalmenü eltűnése effekt -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+ <!-- Oldalmenü eltűnése effekt vége! -->
+
+ <!-- OLDAL TARTALMA -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+	<header class="w3-container" style="padding-top:22px; padding-left: 50px; padding-right: 50px;">
+	<header class="w3-container">
+		<h2><b>Védekezés és megelőzés</b></h2>
+	</header>
+	
+        <p id="tartalom">
+		A koronavírus cseppfertőződés alapján terjed, tehát  a kórokozók emberről emberre terjednek.
+		Hat olyan koronavírust ismert az emberiség, ami az embert is képes megfertőzni, az új 2019-nCoV
+		elnevezésű a hetedik. Mind veszélyes cseppfertőzés útján terjed az élő szervezetekben. A cseppfertőzésnek
+		a gyakorlati jelentősége igen nagy, egyes betegségek, (ilyen az influenza is) gyorsan tovább terjednek,
+		különösen a nagyobb látogatottságú helyeken okozhat a belégzéssel létrejövő fertőzést.
+		Tüsszentés során akár 8 méter távolságra is elrepülhetnek a tüsszentés során kirepülő legapróbb cseppek.
+		A nagyobb méretű cseppek 1-2 méteren belül földet érnek. Köhögésnél 6 méteres távolságig is eljutnak a kirepülő cseppek. 
+		Az apró lebegő cseppecskék egy szobában akár 10 percig is a levegőben terjenghetnek megfelelő körülmények esetén.</p>
+
+		<h5><b>A koronavírus tünetei:</b></h5>
+		<ul>
+			<li>Hirtelen kialakuló láz</li>
+			<li>Száraz köhögés(később hurutossá válhat)</li>
+			<li>Tüdőgyulladás</li>
+			<li>Hasmenés</li>
+		</ul>
+
+		<h5><b>Megelőzése:</b></h5>
+		<ul>
+			<li>tüsszentéskor, köhögéskor tegyen az arca elő zsebkendőt, vagy a könyökhajlatát</li>
+			<li>rendszeres és alapos kézmosás, fertőtlenítés</li>
+			<li>napközben alkalmazzon alkoholos kézfertőtlenítőt</li>
+			<li>ne utazzon az érintett helyekre, kerülje azokat el</li>
+			<li>szájmaszk viselése javasolt</li>
+			<li>kerülje el a zsúfolt helyeket</li>
+		</ul>
+
+		<h5><b>Szájmaszkok:</b></h5>
+		<ul>
+			<li>FFP1</li>
+			A levegő 80%-kát szűri meg, ez azt jelenti, hogy a vírusok elég apróak ahhoz, hogy ezen áthatoljanak,
+			ezáltal ezzel a körülötténk lévőket tudjuk védeni a vírus ellen abszolúlt nem véd.
+			<li>FFP2</li>
+			A levegő 80-94%-kát szűrik meg a levegőnek ez a maszk típúsától is függ,
+			jelenleg ebből van a legnagyobb hiány Európában. Ez sem jelent azonban teljes
+			biztonságot a koronavírussal, valamint más egyéb vírusokkal szemben.
+			<li>FFP3</li>
+			A levegőt 99%-ban megszűri, a vírusokkal szemben egyedül ez tudja felvenni a harcot.
+		</ul>
+	</header>
+
+  <!-- Lábléc -->
+	<footer class="w3-container w3-red w3-center w3-margin-top w3-card">
+		<p><b>Elérhetőségeink</b></p>
+		<a href="https://www.facebook.com/koronavirushun/" target="_blank" title="Facebook oldal"  > <i style="margin-right: 0.5em; color: #EEEEEE;" class="fab fa-facebook-f"  id="icons"></i></a>
+		<a href="https://www.facebook.com/groups/1007747686266719/" target="_blank" title="Facebook csoport"> <i style="margin-right: 0.5em; color: #EEEEEE;" class="fas fa-users"  id="icons"></i></a>
+		<a href="mailto:support@koronavirus-info.hu" title="Email"><i style="margin-right: 0.5em; color: #EEEEEE;" class="fas far fa-envelope" id="icons"></i></a>
+		<i class="fab fa-linkedin-in" id="icons" title="LinkedIn"></i>
+		<p><a href="https://www.facebook.com/koronavirushun" target="_blank" title="Facebook oldal">Kövessen minket a facebookon is!</a></p>
+	</footer>
+</div>
+	<script src="src\js\sidebar.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

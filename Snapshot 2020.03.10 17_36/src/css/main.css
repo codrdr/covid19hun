@@ -1,0 +1,153 @@
+/* Fejléc doboz */
+#fejlec {
+	z-index:1; /*Ez adja meg, mi legyen előtérben. Amelyiknél ez az érték nagyobb, az kerül felülre.*/
+	background-color:#9D0000;
+	color: white;
+	text-align: center;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Fejléc elem */
+#spanfejlec{
+	width:100%;
+	display:block;
+	padding:15px 16px;
+	text-align:center;
+	border:none;
+	white-space:normal;
+	float:none;
+	outline:0;
+}
+
+/* Statiszikai doboz effekt */
+#doboz {
+	transition: transform .2s;
+}
+
+/* Statisztikai doboz effekt */
+#doboz:hover {
+	-ms-transform: scale(1.05);     /* IE 9 */
+	-webkit-transform: scale(1.05); /* Safari 3-8 */
+	transform: scale(1.05); 
+}
+
+/* Tartalom a cikkek szerkesztéséhez*/
+#tartalom {
+	text-align: justify;
+}
+
+/* Üdvözlő üzenet */
+#udvozlunk {
+	font-size: 20px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10px;
+	width: 80%;
+}
+
+/* Menü doboz elemei */
+#menuitem {
+	transition: transform .2s;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	background-color: transparent;
+	display: block;
+	border: none;
+	width: 98%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* Menü doboz elemei */
+#menuitem:hover {
+	-ms-transform: scale(1.05);     /* IE 9 */
+	-webkit-transform: scale(1.05); /* Safari 3-8 */
+	transform: scale(1.05); 
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Lenyíló menü tároló. */
+.dropdown-container {
+	display: none;
+	background-color: #D3D3D3;
+}
+
+/* Lenyíló menügomb */
+.dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	background-color: transparent;
+	display: block;
+	border: none;
+	width: 98%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/*Lenyíló menü elemek*/
+#link {
+	padding: 6px 8px 6px 40px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	background-color: transparent;
+	display: block;
+	border: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+	transition: transform .2s;
+}
+
+/* Jobboldali lenyíló menü ikon */
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+
+/* Lenyíló menü elemeinek kiemelése */
+#link:hover{
+	transform: scale(1.05);
+}
+
+/* Aktív menüpont */
+.active {
+	color: white;
+	transform: scale(1.05);
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Hivatkozás aláhúzásának eltávolítása */
+a {
+	text-decoration: none;
+}
+
+/* Nyilvánvaló */
+#icons:hover {
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+/* Táblázat */
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
